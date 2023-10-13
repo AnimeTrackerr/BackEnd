@@ -28,5 +28,5 @@ func SetRoutes() {
 	AddHandlers(r)
 
 	fmt.Printf("Starting server on PORT%s ....\n", PORT_NO)
-	log.Fatal(http.ListenAndServe("127.0.0.1" + PORT_NO, r))
+	log.Fatal(http.ListenAndServe("0.0.0.0" + PORT_NO, r))
 }
