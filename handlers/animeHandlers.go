@@ -153,7 +153,7 @@ func SearchAnime(w http.ResponseWriter, r *http.Request) {
 				},
 			},
 		},
-		bson.D{{Key: "$limit", Value: 5}},
+		bson.D{{Key: "$limit", Value: 7}},
 		bson.D{
 			{Key: "$project",
 				Value: bson.D{
